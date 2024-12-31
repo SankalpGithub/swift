@@ -1,3 +1,4 @@
+import { Roboto } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,9 +10,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryBlack: "#000000",
+        primaryWhite: '#ffffff',
+        ratingStar: '#FFC633',
+        discountRed: '#FF3333',
+        verifyGreen: '#01AB31',
+        searchGrey: '#F0F0F0'
       },
+      fontFamily: {
+        Roboto: ['Roboto', 'sans-serif']
+      },
+      height: {
+        '589px': '589px',
+        '180px': '180px', // Custom pixel height
+        '499px': '499px'
+      },
+      
     },
   },
   plugins: [],
